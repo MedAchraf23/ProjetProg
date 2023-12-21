@@ -4,15 +4,12 @@
 class equipement {
 public:
 
-    equipement(int pointSolidite);
-    int getPointSolidite () const;
-    void setPointSolidite () const;
-    void ramassermonnaie() const;
-
-
-
-private:
-    int d_pointSolidite ;
+    equipement(double pointSolidite);
+    double getPointSolidite() const;
+    void setPointSolidite(double pointSolidite);
+    void ramasserMonnaie();
+protected:
+    double d_pointSolidite ;
 
 };
 

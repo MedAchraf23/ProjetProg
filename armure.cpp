@@ -1,20 +1,24 @@
-#include"armure.h"
+#include "armure.h"
 
-armure::armure(int pointSolidite):
-    equipement{pointSolidite} {}
+armure::armure(double pointSolidite):
+    equipement{pointSolidite}
+{}
 
-int armure::attaquemonstre(int pointforce)const{
-    f{pointforce*0.75};
+double armure::attaqueMonstre(double pointforce)
+{
+    double f = pointforce*0.75;
     absorbe(f);
-    int reste{pointforce-f};
-    return reste;
+    return pointforce-f; //reste
 }
 
-void armure::absorbe(double f) const{
-    p{pointSolidite()};
-    p = p - pointforce/2;
-    if(p<0) p{0};
+void armure::absorbe(double f)
+{
+    double p = getPointSolidite();
+    p = p - (f/2);
+    if(p < 0)
+    {
+        p = 0;
+    }
     setPointSolidite(p);
-
 }
 

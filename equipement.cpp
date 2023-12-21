@@ -1,15 +1,19 @@
-#include<equipement.h>
+#include "equipement.h"
 
-equipement::equipement(int pointSolidite):
+equipement::equipement(double pointSolidite):
     d_pointSolidite{pointSolidite} {}
 
-int equipement::getPointSolidite () const{
-return d_pointSolidite;
-}
-void equipement::setPointSolidite (int pointSolidite) const{
-d_pointSolidite{poinSolidite};
+double equipement::getPointSolidite () const
+{
+    return d_pointSolidite;
 }
 
-void equipement::ramassermonnaie() const{
-d_poinSolidite++;
+void equipement::setPointSolidite(double pointSolidite)
+{
+    d_pointSolidite = pointSolidite;
+}
+
+void equipement::ramasserMonnaie()
+{
+    d_pointSolidite++;
 }

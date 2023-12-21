@@ -1,16 +1,17 @@
 #include "doctest.h"
 #include "aventurier.h"
 
+
 TEST_CASE("La class aventurier fonctionne correctement") {
 
     SUBCASE("Le getVie fonctionne correctement") {
-        int vie = 10;
+        double vie = 10;
         aventurier a{vie};
         REQUIRE_EQ(a.getVie(),vie);
     }
-
-    SUBCASE("Le choix du deplacment est bien calcule") {
-        int vie = 2, force 3, y = 11, x = 10;
+    SUBCASE("Le choix du deplacement est bien calcule") {
+        double vie = 2, force = 3;
+        int y = 11, x = 10;
         aventurier a{vie,force,x,y};
         int choix = 1;
         a.deplacer(choix);

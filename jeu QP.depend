@@ -1,0 +1,107 @@
+# depslib dependency file v1.0
+1703132008 source:c:\users\zk\desktop\explorationruines\projetprog\maintest.cpp
+	"doctest.h"
+
+1703133118 c:\users\zk\desktop\explorationruines\projetprog\doctest.h
+	<signal.h>
+	<ciso646>
+	<cstddef>
+	<ostream>
+	<istream>
+	<type_traits>
+	"doctest_fwd.h"
+	<ctime>
+	<cmath>
+	<climits>
+	<math.h>
+	<new>
+	<cstdio>
+	<cstdlib>
+	<cstring>
+	<limits>
+	<utility>
+	<fstream>
+	<sstream>
+	<iostream>
+	<algorithm>
+	<iomanip>
+	<vector>
+	<atomic>
+	<mutex>
+	<set>
+	<map>
+	<unordered_set>
+	<exception>
+	<stdexcept>
+	<csignal>
+	<cfloat>
+	<cctype>
+	<cstdint>
+	<string>
+	<sys/types.h>
+	<unistd.h>
+	<sys/sysctl.h>
+	<AfxWin.h>
+	<windows.h>
+	<io.h>
+	<sys/time.h>
+	<unistd.h>
+
+1703178532 source:c:\users\zk\desktop\explorationruines\projetprog\monstre.cpp
+	"monstre.h"
+
+1703178532 c:\users\zk\desktop\explorationruines\projetprog\monstre.h
+	<random>
+	<ctime>
+
+1703178532 source:c:\users\zk\desktop\explorationruines\projetprog\monstreaveugle.cpp
+	"monstreAveugle.h"
+
+1703178532 c:\users\zk\desktop\explorationruines\projetprog\monstreaveugle.h
+	"monstre.h"
+
+1703178532 source:c:\users\zk\desktop\explorationruines\projetprog\monstrevoyant.cpp
+	"monstreVoyant.h"
+
+1703178532 c:\users\zk\desktop\explorationruines\projetprog\monstrevoyant.h
+	"monstre.h"
+
+1703181400 source:c:\users\zk\desktop\explorationruines\projetprog\amulette.cpp
+	"amulette.h"
+
+1703181415 c:\users\zk\desktop\explorationruines\projetprog\amulette.h
+	"aventurier.h"
+
+1703184899 c:\users\zk\desktop\explorationruines\projetprog\aventurier.h
+	"equipement.h"
+	"epee.h"
+	"armure.h"
+
+1703183815 c:\users\zk\desktop\explorationruines\projetprog\equipement.h
+
+1703184087 c:\users\zk\desktop\explorationruines\projetprog\epee.h
+	"equipement.h"
+
+1703184162 c:\users\zk\desktop\explorationruines\projetprog\armure.h
+	"equipement.h"
+
+1703184087 source:c:\users\zk\desktop\explorationruines\projetprog\epee.cpp
+	"epee.h"
+
+1703184162 source:c:\users\zk\desktop\explorationruines\projetprog\armure.cpp
+	"armure.h"
+
+1703184197 source:c:\users\zk\desktop\explorationruines\projetprog\equipement.cpp
+	"equipement.h"
+
+1703184978 source:c:\users\zk\desktop\explorationruines\projetprog\aventurier.cpp
+	"aventurier.h"
+
+1703185737 source:c:\users\zk\desktop\explorationruines\projetprog\testaventurier.cpp
+	"doctest.h"
+	"aventurier.h"
+
+1703185521 source:c:\users\zk\desktop\explorationruines\projetprog\testarmure.cpp
+	"armure.h"
+	"doctest.h"
+

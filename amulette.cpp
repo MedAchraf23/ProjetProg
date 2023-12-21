@@ -1,13 +1,27 @@
-#include<amulette.h>
+#include "amulette.h"
 
-amulette::amulette(const position& p):
-    d_position{position} {}
+amulette::amulette(int x, int y):
+    d_x{x}, d_y{y}
+{
 
-position amulette::position() const{
-return d_position;
 }
 
-bool amulette::amuletteramassé() const {
-    return d_position==aventurier.postion();
+int amulette::getX() const
+{
+    return d_x;
+}
 
+int amulette::getY() const
+{
+    return d_y;
+}
+
+bool amulette::amuletteRamasse(const aventurier& a) const
+{
+    if(d_x == a.getX() && d_y == a.getY())
+    {
+        return true;
+    }
+    else
+        return false;
 }

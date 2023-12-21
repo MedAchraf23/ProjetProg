@@ -1,8 +1,9 @@
 #include"epee.h"
 
-epee::epee(int pointSolidite):
+epee::epee(double pointSolidite):
     equipement{pointSolidite} {}
 
-void epee::attaqueepee() const{
+void epee::attaqueEpee()
+{
     d_pointSolidite--;
 }

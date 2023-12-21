@@ -1,14 +1,13 @@
 #ifndef ARMURE_H_INCLUDED
 #define ARMURE_H_INCLUDED
 
+#include "equipement.h"
+
 class armure : public equipement {
 public:
-
-    armure(int pointSolidite);
-    void attaquemonstre(int poinforce)const;
-    void absorbe(int f) const;
-
-
+    armure(double pointSolidite);
+    double attaqueMonstre(double poinforce);
+    void absorbe(double f);
 };
 
 

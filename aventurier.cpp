@@ -1,29 +1,29 @@
 #include "aventurier.h"
 
-aventurier::aventurier(int vie, int force, const epee& epee, const armure& armure, int xInit, int yInit) :
-    d_pointsVie{vie}, d_pointsForce{force}, d_epee{epee}, d_armure{armure}, d_x{xInit}, d_y{yInit}
+aventurier::aventurier(double vie, double force, const epee& epee, const armure& armure, int xInit, int yInit) :
+    d_pointsVie{vie}, d_pointsForce{force}, d_epee{force}, d_armure{armure}, d_x{xInit}, d_y{yInit}
 {
 
 }
 
-aventurier::aventurier(int vie) :
-    d_pointsVie{vie}, d_pointsForce{0}, d_x{0}, d_y{0}
+aventurier::aventurier(double vie) :
+    d_pointsVie{vie}, d_epee{0.0}, d_armure{0.0}, d_pointsForce{0.0}, d_x{0}, d_y{0}
 {
 
 }
 
-aventurier::aventurier(int vie, int force, int x, int y) :
-    d_pointsVie{vie}, d_pointsForce{force}, d_x{x}, d_y{y}
+aventurier::aventurier(double vie, double force, int x, int y) :
+    d_pointsVie{vie}, d_epee{0.0}, d_armure{0.0}, d_pointsForce{force}, d_x{x}, d_y{y}
 {
 
 }
 
-int aventurier::getVie() const
+double aventurier::getVie() const
 {
     return d_pointsVie;
 }
 
-int aventurier::getForce() const
+double aventurier::getForce() const
 {
     return d_pointsForce;
 }
@@ -90,12 +90,12 @@ void aventurier::deplacer(int choix)
 }
 
 
-void aventurier::subirDegat(int f)
+void aventurier::subirDegat(double f)
 {
-    //d_pointsVie -= d_armure.attaquemonstre(f);
+    d_pointsVie -= d_armure.attaqueMonstre(f);
 }
 
-void aventurier::attaque(int f)
+void aventurier::attaque(double f)
 {
-    //d_epee.attaqueepee();
+    d_epee.attaqueEpee();
 }
