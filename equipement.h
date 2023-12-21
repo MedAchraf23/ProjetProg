@@ -1,16 +1,15 @@
 #ifndef EQUIPEMENT_H_INCLUDED
 #define EQUIPEMENT_H_INCLUDED
 
-class equipement {
+class equipement
+{
 public:
-
     equipement(double pointSolidite);
     double getPointSolidite() const;
     void setPointSolidite(double pointSolidite);
-    void ramasserMonnaie();
+    //void ramasserMonnaie();
 protected:
-    double d_pointSolidite ;
-
+    double d_pointSolidite;
 };
 
 

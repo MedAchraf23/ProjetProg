@@ -4,6 +4,7 @@
 #include "equipement.h"
 #include "epee.h"
 #include "armure.h"
+#include "amulette.h"
 
 class aventurier
 {
@@ -22,6 +23,7 @@ public:
     void deplacer(int choix);
     void subirDegat(double f);
     void attaque(double f);
+    bool possedeAmulette(const amulette& a) const;
 private:
     double d_pointsVie;
     double d_pointsForce;

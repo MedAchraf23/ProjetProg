@@ -13,7 +13,9 @@ void equipement::setPointSolidite(double pointSolidite)
     d_pointSolidite = pointSolidite;
 }
 
+/*
 void equipement::ramasserMonnaie()
 {
     d_pointSolidite++;
 }
+*/

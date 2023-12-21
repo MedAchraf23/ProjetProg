@@ -99,3 +99,13 @@ void aventurier::attaque(double f)
 {
     d_epee.attaqueEpee();
 }
+
+bool aventurier::possedeAmulette(const amulette& a) const
+{
+    if(d_x == a.getX() && d_y == a.getY())
+    {
+        return true;
+    }
+    else
+        return false;
+}

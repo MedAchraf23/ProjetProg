@@ -3,7 +3,8 @@
 
 #include "equipement.h"
 
-class armure : public equipement {
+class armure : public equipement
+{
 public:
     armure(double pointSolidite);
     double attaqueMonstre(double poinforce);

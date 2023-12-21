@@ -16,12 +16,3 @@ int amulette::getY() const
     return d_y;
 }
 
-bool amulette::amuletteRamasse(const aventurier& a) const
-{
-    if(d_x == a.getX() && d_y == a.getY())
-    {
-        return true;
-    }
-    else
-        return false;
-}
