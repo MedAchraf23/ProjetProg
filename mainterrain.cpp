@@ -1,23 +1,18 @@
-#include <iostream>
-#include <string>
-#include <vector>
 #include "terrain.h"
-#include <windows.h>
-#include <conio.h>
+
 using namespace std;
 
 
 int main()
 {
 
- terrain chateau{10,10};
+ terrain chateau{10,25};
  chateau.init_terrain();
  int x=1,y=1;
  bool placed;
  chateau.objet_terrain(x,y,"@");
- chateau.affiche_terrain();
- chateau.terrain_objet_update(x,y,"@");
-
-
+ int ax=10,ay=115;
+ chateau.affiche_terrain(ax,ay);
+ chateau.terrain_objet_update(1,1,"@",ax,ay);
     return 0;
 }

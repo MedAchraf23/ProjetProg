@@ -12,13 +12,13 @@ void terrain::goto_xy(int x, int y)
 
 terrain::terrain(int largeur,int longeur):d_largeur{largeur},d_longeur{longeur},d_terrainOBjet{}{}
 
- void terrain::affiche_terrain(){
-
+ void terrain::affiche_terrain(int x ,int y){
+    int tmpx=x;
     string chaine="-----";
-    int x=0,y=0,k=0,j,i;
+    int k=0,j,i;
     i=0;
     while(i<d_longeur)
-    {
+    {  this->goto_xy(x,y);
        j=0;
        while(j<d_largeur)
        {
@@ -46,7 +46,7 @@ terrain::terrain(int largeur,int longeur):d_largeur{largeur},d_longeur{longeur},
       i++;
       cout<<endl;
       y+=1;
-      x=0;
+      x=tmpx;
     }
 
  }
@@ -100,9 +100,9 @@ bool terrain::objet_terrain(int x,int y,const string& ch){
 
 
 
-void terrain::terrain_objet_update(int x,int y ,const string& ch)
+void terrain::terrain_objet_update(int x,int y ,const string& ch,int x1,int y1)
 {
- this->goto_xy((x+1)*5-3, y);
+ this->goto_xy((x+1)*5-3+x1, y+y1);
  int key;
  bool placed;
   while ((key = _getch()) != 'q') {
@@ -112,32 +112,32 @@ void terrain::terrain_objet_update(int x,int y ,const string& ch)
             switch (key) {
                 case 72:
                     if((placed=this->objet_terrain(x,y-1,"@")) && placed==true )
-                    {this->goto_xy((x+1)*5-3, y);
+                    {this->goto_xy((x+1)*5-3+x1, y+y1);
                     cout <<" ";
                     y--;}
                     break;
                 case 80:
                     if((placed=this->objet_terrain(x,y+1,"@")) && placed==true )
-                    {this->goto_xy((x+1)*5-3, y);
+                    {this->goto_xy((x+1)*5-3+x1, y+y1);
                     cout <<" ";
                     y++;}
                     break;
                 case 77:
                     if((placed=this->objet_terrain(x+1,y,"@")) && placed==true )
-                    {this->goto_xy((x+1)*5-3, y);
+                    {this->goto_xy((x+1)*5-3+x1, y+y1);
                     cout <<" ";
                     x++;}
                     break;
                 case 75:
                     if((placed=this->objet_terrain(x-1,y,"@")) && placed==true )
-                    {this->goto_xy((x+1)*5-3, y);
+                    {this->goto_xy((x+1)*5-3+x1, y+y1);
                     cout <<" ";
                     x--;}
                     break;
             }
         }
 
-        this->goto_xy((x+1)*5-3, y);
+        this->goto_xy((x+1)*5-3+x1, y+y1);
         cout <<ch;
     }
 }
