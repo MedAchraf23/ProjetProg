@@ -52,6 +52,7 @@
 		<Unit filename="monstreVoyant.h" />
 		<Unit filename="testArmure.cpp" />
 		<Unit filename="testAventurier.cpp" />
+		<Unit filename="testEpee.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

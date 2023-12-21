@@ -60,18 +60,19 @@
 1703190767 c:\users\zk\desktop\explorationruines\projetprog\monstreaveugle.h
 	"monstre.h"
 
-1703178532 source:c:\users\zk\desktop\explorationruines\projetprog\monstrevoyant.cpp
+1703191172 source:c:\users\zk\desktop\explorationruines\projetprog\monstrevoyant.cpp
 	"monstreVoyant.h"
 
-1703178532 c:\users\zk\desktop\explorationruines\projetprog\monstrevoyant.h
+1703191206 c:\users\zk\desktop\explorationruines\projetprog\monstrevoyant.h
 	"monstre.h"
+	"aventurier.h"
 
 1703189100 source:c:\users\zk\desktop\explorationruines\projetprog\amulette.cpp
 	"amulette.h"
 
 1703191097 c:\users\zk\desktop\explorationruines\projetprog\amulette.h
 
-1703191029 c:\users\zk\desktop\explorationruines\projetprog\aventurier.h
+1703194771 c:\users\zk\desktop\explorationruines\projetprog\aventurier.h
 	"equipement.h"
 	"epee.h"
 	"armure.h"
@@ -94,10 +95,10 @@
 1703189373 source:c:\users\zk\desktop\explorationruines\projetprog\equipement.cpp
 	"equipement.h"
 
-1703189101 source:c:\users\zk\desktop\explorationruines\projetprog\aventurier.cpp
+1703194755 source:c:\users\zk\desktop\explorationruines\projetprog\aventurier.cpp
 	"aventurier.h"
 
-1703185925 source:c:\users\zk\desktop\explorationruines\projetprog\testaventurier.cpp
+1703194755 source:c:\users\zk\desktop\explorationruines\projetprog\testaventurier.cpp
 	"doctest.h"
 	"aventurier.h"
 
