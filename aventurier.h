@@ -6,12 +6,13 @@
 #include "armure.h"
 #include "amulette.h"
 
+const int xInitial = 10;
+const int yInitial = 10;
+
 class aventurier
 {
 public:
-    aventurier(double vie, double force, const epee& epee, const armure& armure, int xInit, int yInit);
-    aventurier(double vie);
-    aventurier(double vie, double force, int x, int y);
+    aventurier(double vie, double force, const epee& epee, const armure& armure);
     double getVie() const;
     double getForce() const;
     int getX() const;
