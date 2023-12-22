@@ -15,10 +15,6 @@ public:
     monstreAveugle(int ptsVie, int ptsForce, int habilete, int x, int y);
     void seDeplace();
 
-
-
-
-
 private:
 
 };

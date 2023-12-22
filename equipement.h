@@ -7,7 +7,6 @@ public:
     equipement(double pointSolidite);
     double getPointSolidite() const;
     void setPointSolidite(double pointSolidite);
-    //void ramasserMonnaie();
 protected:
     double d_pointSolidite;
 };
