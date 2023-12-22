@@ -7,9 +7,9 @@
 monstreVoyant::monstreVoyant(int ptsVie, int ptsForce, int habilete, int x, int y):monstre{ptsVie,ptsForce,habilete,x,y}
 {}
 
-void monstreVoyant::seDeplace(const aventurier &a) {
-    int xposAventurier = a.getX();
-    int yposAventurier = a.getY();
+void monstreVoyant::seDeplace(int aventurierX, int aventurierY) {
+    int xposAventurier = aventurierX;
+    int yposAventurier = aventurierY;
 
     int distanceX = xposAventurier - x();
     int distanceY = yposAventurier - y();

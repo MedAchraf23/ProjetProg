@@ -74,7 +74,6 @@ void terrain::init_terrain()
 
     }
 
-
     for(int i=0;i<d_longeur;i++)
     {
       d_terrainOBjet[i][0]="1";

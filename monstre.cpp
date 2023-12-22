@@ -81,6 +81,7 @@ void monstre::deplaceBas()
     d_y++;
 }
 
+
 void monstre::deplaceGauche()
 {
     d_x--;
@@ -101,6 +102,12 @@ void monstre::deplaceHautGauche()
 {
     d_y--;
     d_x--;
+}
+
+void monstre::deplaceHautDroite()
+{
+    d_y--;
+    d_x++;
 }
 
 void monstre::deplaceBasGauche()
