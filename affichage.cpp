@@ -2,8 +2,8 @@
 
 
 
-affichage::affichage(const ostream& ost, const aventurier& aventurier, const terrain& terrain, const monstre& monstre) :
-    d_ost{ost}, d_aventurier{aventurier}, d_terrain{terrain}, d_monstre{monstre}
+affichage::affichage(const ostream& ost, const aventurier& aventurier, const monstreAveugle& monstreAveugle, const monstreVoyant& monstreVoyant, const terrain& terrain, const monstre& monstre) :
+    d_ost{ost}, d_aventurier{aventurier}, d_monstreAveugle{monstreAveugle}, d_monstreVoyant{monstreVoyant}, d_terrain{terrain}, d_monstre{monstre}
 {
 
 }
@@ -18,12 +18,18 @@ terrain affichage::getTerrain() const
     return d_terrain;
 }
 
-monstre affichage::getMonstre() const
+monstreAveugle affichage::getMonstreAveugle() const
 {
-    return d_monstre;
+    return d_monstreAveugle;
 }
 
-void affichage::afficheMenu() const
+monstreVoyant affichage::getMonstreVoyant() const
+{
+    return d_monstreVoyant;
+}
+
+
+int affichage::choixMenu() const
 {
     int choix;
     do
@@ -49,7 +55,12 @@ void affichage::afficheAventurier() const
 
 }
 
-void affichage::afficheMonstre() const
+void affichage::afficheMonstreVoyant() const
+{
+
+}
+
+void affichage::afficheMonstreAveugle() const
 {
 
 }

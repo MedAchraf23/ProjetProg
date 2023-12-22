@@ -12,13 +12,15 @@ void terrain::goto_xy(int x, int y)
 
 terrain::terrain(int largeur,int longeur):d_largeur{largeur},d_longeur{longeur},d_terrainOBjet{}{}
 
- void terrain::affiche_terrain(int x ,int y){
+ void terrain::affiche_terrain(int x ,int y) const
+ {
     int tmpx=x;
     string chaine="-----";
     int k=0,j,i;
     i=0;
     while(i<d_longeur)
-    {  this->goto_xy(x,y);
+    {
+       this->goto_xy(x,y);
        j=0;
        while(j<d_largeur)
        {
