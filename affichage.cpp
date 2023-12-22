@@ -54,7 +54,10 @@ void affichage::afficheMonstre() const
 
 }
 
-void affichage::afficheConfigAventurier() const
+void affichage::afficheInfoAventurier() const
 {
-
+    std::cout<<"Points de vie : "<<d_aventurier.getVie()<<'/n';
+    std::cout<<"Points de force : "<<d_aventurier.getForce()<<'/n';
+    std::cout<<"Solidite armure : "<<d_aventurier.getArmure().getPointSolidite()<<'/n';
+    std::cout<<"Solidite epee : "<<d_aventurier.getArmure().getPointSolidite()<<'/n';
 }

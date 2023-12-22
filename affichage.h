@@ -1,12 +1,20 @@
 #ifndef AFFICHAGE_H_INCLUDED
 #define AFFICHAGE_H_INCLUDED
 
-#include <ostream>
+#include <iostream>
+#include "aventurier.h"
+#include "terrain.h"
+#include "monstre.h"
+#include "amulette.h"
+
+using std::cout;
+using std::cin;
+using std::endl;
 
 class affichage
 {
 public:
-    affichage(const ostream& ost, const aventurier& aventurier, const terrain& terrain, const monstre& monstre, const amulette& amulette);
+    affichage(const std::ostream& ost, const aventurier& aventurier, const terrain& terrain, const monstre& monstre, const amulette& amulette);
     aventurier getAventurier() const;
     terrain getTerrain() const;
     monstre getMonstre() const;
@@ -14,7 +22,7 @@ public:
     void afficheTerrain() const;
     void afficheAventurier() const;
     void afficheMonstre() const;
-    void afficheConfigAventurier() const;
+    void afficheInfoAventurier() const;
     void afficheDesTouchesDeplacement() const;
     void afficheAmulette() const;
 private:
