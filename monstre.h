@@ -17,6 +17,19 @@ public:
     void perdPointsVie(int force);
     int attaque() const;
 
+    void setX(int x);
+    void setY(int y);
+
+    void deplaceHaut();
+    void deplaceBas();
+    void deplaceGauche();
+    void deplaceDroite();
+
+    void deplaceHautDroite();
+    void deplaceHautGauche();
+    void deplaceBasDroite();
+    void deplaceBasGauche();
+
 
     bool estVivant() const;
     int pointsVie() const;
