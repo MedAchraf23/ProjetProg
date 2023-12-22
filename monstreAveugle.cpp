@@ -5,7 +5,8 @@
 #include "monstreAveugle.h"
 
 
-void monstreAveugle::seDeplace() { //mettre un char en parametre
+void monstreAveugle::seDeplace()
+{
     std::srand(std::time(0));
     int choix = std::rand() % 8 + 1;
 
