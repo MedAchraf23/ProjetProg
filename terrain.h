@@ -14,7 +14,7 @@ class terrain
   public:
   void goto_xy(int x=0, int y=0)const;
   terrain(int largeur,int longeur);
-  void affiche_terrain(int x ,int y)const;
+  void affiche_terrain(int x ,int y) const;
   void init_terrain();
   int get_largeur()const;
   int get_longeur()const;
