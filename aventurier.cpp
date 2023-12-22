@@ -37,6 +37,16 @@ int aventurier::getY() const
     return d_y;
 }
 
+armure aventurier::getArmure() const
+{
+    return d_armure;
+}
+
+epee aventurier::getEpee() const
+{
+    return d_epee;
+}
+
 void aventurier::deplacer(int choix)
 {
     bool m = true;

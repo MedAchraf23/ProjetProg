@@ -61,3 +61,51 @@ d_pointsForce{ptsForce}, d_habilete{habilete}, d_x{x}, d_y{y},d_vivant{true}
 
 }
 
+void monstre::deplaceHaut()
+{
+    d_y--;
+}
+
+void monstre::setX(int x)
+{
+    d_x = x;
+}
+
+void monstre::setY(int y)
+{
+    d_y = y;
+}
+
+void monstre::deplaceBas()
+{
+    d_y++;
+}
+
+void monstre::deplaceGauche()
+{
+    d_x--;
+}
+
+void monstre::deplaceDroite()
+{
+    d_x++;
+}
+
+void monstre::deplaceBasDroite()
+{
+    d_y++;
+    d_x++;
+}
+
+void monstre::deplaceHautGauche()
+{
+    d_y--;
+    d_x--;
+}
+
+void monstre::deplaceBasGauche()
+{
+    d_x--;
+    d_y++;
+}
+

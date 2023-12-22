@@ -19,8 +19,8 @@ public:
     int getY() const;
     void setX(int x);
     void setY(int y);
-    equipement getEpee() const;
-    equipement getArmure() const;
+    epee getEpee() const;
+    armure getArmure() const;
     void deplacer(int choix);
     void subirDegat(double f);
     void attaque(double f);
