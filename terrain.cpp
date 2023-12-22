@@ -1,6 +1,6 @@
 #include "terrain.h"
 
-void terrain::goto_xy(int x, int y)
+void terrain::goto_xy(int x, int y)const
 {
   HANDLE handle;
   COORD coordinates;
@@ -12,11 +12,12 @@ void terrain::goto_xy(int x, int y)
 
 terrain::terrain(int largeur,int longeur):d_largeur{largeur},d_longeur{longeur},d_terrainOBjet{}{}
 
- void terrain::affiche_terrain(int x ,int y){
+ void terrain::affiche_terrain(int x ,int y)const{
+
     int tmpx=x;
     string chaine="-----";
-    int k=0,j,i;
-    i=0;
+    int k=0,j,i=0;
+    this->setcolorText(2);
     while(i<d_longeur)
     {  this->goto_xy(x,y);
        j=0;
@@ -33,12 +34,16 @@ terrain::terrain(int largeur,int longeur):d_largeur{largeur},d_longeur{longeur},
           else if(d_terrainOBjet[i][j]=="1")
                {
                 if(j==d_largeur-1)
-                 goto_xy(x-2,y);
+                 this->goto_xy(x-2,y);
+
                 cout<<"-----";
                 x+=7;
                }else {
-                   goto_xy(x,y);
+                   this->goto_xy(x,y);
+                   if(d_terrainOBjet[i][j]=="@")
+                     this->setcolorText(4);
                    cout<<d_terrainOBjet[i][j];
+                    this->setcolorText(2);
                    x+=5;
                }
            j++;
@@ -52,8 +57,8 @@ terrain::terrain(int largeur,int longeur):d_largeur{largeur},d_longeur{longeur},
  }
 
 
-int  terrain::get_largeur(){return d_largeur;}
-int  terrain::get_longeur(){return d_longeur;}
+int  terrain::get_largeur()const{return d_largeur;}
+int  terrain::get_longeur()const{return d_longeur;}
 void terrain::set_largeur(int x){d_largeur=x;}
 void terrain::set_longeur(int y){d_longeur=y;}
 
@@ -103,41 +108,77 @@ bool terrain::objet_terrain(int x,int y,const string& ch){
 void terrain::terrain_objet_update(int x,int y ,const string& ch,int x1,int y1)
 {
  this->goto_xy((x+1)*5-3+x1, y+y1);
- int key;
+ this->setcolorText(4);
+ char key;
  bool placed;
   while ((key = _getch()) != 'q') {
-        if (key == 0 || key == 0xE0) {
-            key = _getch();
-
             switch (key) {
-                case 72:
+                case 49:
                     if((placed=this->objet_terrain(x,y-1,"@")) && placed==true )
                     {this->goto_xy((x+1)*5-3+x1, y+y1);
                     cout <<" ";
                     y--;}
                     break;
-                case 80:
+                case 50:
                     if((placed=this->objet_terrain(x,y+1,"@")) && placed==true )
                     {this->goto_xy((x+1)*5-3+x1, y+y1);
                     cout <<" ";
                     y++;}
                     break;
-                case 77:
+                case 51:
                     if((placed=this->objet_terrain(x+1,y,"@")) && placed==true )
                     {this->goto_xy((x+1)*5-3+x1, y+y1);
                     cout <<" ";
                     x++;}
                     break;
-                case 75:
+                case 52:
                     if((placed=this->objet_terrain(x-1,y,"@")) && placed==true )
                     {this->goto_xy((x+1)*5-3+x1, y+y1);
                     cout <<" ";
                     x--;}
                     break;
+                case 53:
+                    if((placed=this->objet_terrain(x-1,y-1,"@")) && placed==true )
+                    {this->goto_xy((x+1)*5-3+x1, y+y1);
+                    cout <<" ";
+                    x--;
+                    y--;}
+                    break;
+                case 54:
+                    if((placed=this->objet_terrain(x+1,y-1,"@")) && placed==true )
+                    {this->goto_xy((x+1)*5-3+x1, y+y1);
+                    cout <<" ";
+                    x++;
+                    y--;}
+                    break;
+                case 55:
+                    if((placed=this->objet_terrain(x-1,y+1,"@")) && placed==true )
+                    {this->goto_xy((x+1)*5-3+x1, y+y1);
+                    cout <<" ";
+                    x--;
+                    y++;}
+                    break;
+                case 56:
+                    if((placed=this->objet_terrain(x+1,y+1,"@")) && placed==true )
+                    {this->goto_xy((x+1)*5-3+x1, y+y1);
+                    cout <<" ";
+                    x++;
+                    y++;}
+                    break;
             }
-        }
+
 
         this->goto_xy((x+1)*5-3+x1, y+y1);
         cout <<ch;
     }
+}
+
+
+void terrain::setcolorText(int color)const
+{
+
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleTextAttribute(hConsole, color);
+
+
 }

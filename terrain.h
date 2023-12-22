@@ -18,10 +18,12 @@ class terrain
   void init_terrain();
   int get_largeur()const;
   int get_longeur()const;
-  void set_largeur(int x)const;
+  void set_largeur(int x);
   void set_longeur(int y);
   bool objet_terrain(int x,int y,const string& ch);
   void terrain_objet_update(int x,int y ,const string& ch,int x1,int y1);
+  void setcolorText(int color)const;
+
   private:
    int d_largeur,d_longeur;
    vector<vector<string>> d_terrainOBjet;
