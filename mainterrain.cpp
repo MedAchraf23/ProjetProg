@@ -6,7 +6,7 @@ using namespace std;
 int main()
 {
 
- terrain chateau{10,25};
+ terrain chateau{20,20};
  chateau.init_terrain();
  int x=1,y=1;
  bool placed;

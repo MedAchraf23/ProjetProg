@@ -45,6 +45,7 @@
 		<Unit filename="epee.h" />
 		<Unit filename="equipement.cpp" />
 		<Unit filename="equipement.h" />
+		<Unit filename="mainterrain.cpp" />
 		<Unit filename="maintest.cpp" />
 		<Unit filename="monstre.cpp" />
 		<Unit filename="monstre.h" />
@@ -52,10 +53,11 @@
 		<Unit filename="monstreAveugle.h" />
 		<Unit filename="monstreVoyant.cpp" />
 		<Unit filename="monstreVoyant.h" />
+		<Unit filename="terrain.cpp" />
+		<Unit filename="terrain.h" />
 		<Unit filename="testArmure.cpp" />
 		<Unit filename="testAventurier.cpp" />
 		<Unit filename="testEpee.cpp" />
-		<Unit filename="testMonstreAveugle.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

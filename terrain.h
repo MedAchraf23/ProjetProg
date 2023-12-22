@@ -13,7 +13,7 @@ using namespace std;
 class terrain
 {
   public:
-  void goto_xy(int x = 0, int y = 0);
+  void goto_xy(int x=0, int y=0)const;
   terrain(int largeur,int longeur);
   void affiche_terrain(int x ,int y) const;
   void init_terrain();

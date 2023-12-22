@@ -12,20 +12,14 @@ void terrain::goto_xy(int x, int y)const
 
 terrain::terrain(int largeur,int longeur):d_largeur{largeur},d_longeur{longeur},d_terrainOBjet{}{}
 
-<<<<<<< HEAD
- void terrain::affiche_terrain(int x ,int y) const
- {
-=======
  void terrain::affiche_terrain(int x ,int y)const{
 
->>>>>>> 95aeda4c098ee26431804af44ab39d03ee7e30ef
     int tmpx=x;
     string chaine="-----";
     int k=0,j,i=0;
     this->setcolorText(2);
     while(i<d_longeur)
-    {
-       this->goto_xy(x,y);
+    {  this->goto_xy(x,y);
        j=0;
        while(j<d_largeur)
        {
@@ -79,7 +73,6 @@ void terrain::init_terrain()
       d_terrainOBjet[d_longeur-1][i]="1";
 
     }
-
 
     for(int i=0;i<d_longeur;i++)
     {
