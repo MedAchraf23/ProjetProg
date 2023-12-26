@@ -1,4 +1,4 @@
-###"# AdventureQuest2D" 
+### "# AdventureQuest2D" 
 
 Commandes de jeu
 Pour déplacer l'aventurier dans le jeu, utilisez les touches numériques en haut du clavier (de 1 à 8). Chaque touche correspond à une direction différente :
