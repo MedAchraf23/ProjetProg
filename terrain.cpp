@@ -1,5 +1,22 @@
 #include "terrain.h"
 
+/*
+aventurier affichage::getAventurier() const
+{
+    return d_aventurier;
+}
+
+terrain affichage::getTerrain() const
+{
+    return d_terrain;
+}
+
+monstre affichage::getMonstre() const
+{
+    return d_monstre;
+}
+**/
+
 void terrain::goto_xy(int x, int y)const
 {
   HANDLE handle;

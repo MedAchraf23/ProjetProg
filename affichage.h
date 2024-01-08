@@ -1,7 +1,7 @@
 #ifndef AFFICHAGE_H_INCLUDED
 #define AFFICHAGE_H_INCLUDED
 
-#include <iostream>
+#include <fstream>
 #include "aventurier.h"
 #include "terrain.h"
 #include "monstre.h"
@@ -14,23 +14,16 @@ using std::endl;
 class affichage
 {
 public:
-    affichage(const std::ostream& ost, const aventurier& aventurier, const terrain& terrain, const monstre& monstre, const amulette& amulette);
-    aventurier getAventurier() const;
-    terrain getTerrain() const;
-    monstre getMonstre() const;
-    void afficheMenu() const;
-    void afficheTerrain(std::ostream& fichier) const;
+    //affichage();
+    void afficheMenu(int choix) const;
+    void afficheTerrain(std::ofstream& fichier) const;
     void afficheAventurier() const;
     void afficheMonstre() const;
-    void afficheInfoAventurier() const;
+    void afficheInfoAventurier(const aventurier& a) const;
     void afficheDesTouchesDeplacement() const;
     void afficheAmulette() const;
 private:
-    ostream d_ost;
-    aventurier d_aventurier;
-    terrain d_terrain;
-    monstre d_monstre;
-    amulette d_amulette;
+    //std::ofstream d_ost;
 };
 
 

@@ -15,6 +15,11 @@ class terrain
   public:
   void goto_xy(int x=0, int y=0)const;
   terrain(int largeur,int longeur);
+  /*
+  aventurier getAventurier() const;
+  terrain getTerrain() const;
+  monstre getMonstre() const;
+  **/
   void affiche_terrain(int x ,int y) const;
   void init_terrain();
   int get_largeur()const;
@@ -28,6 +33,12 @@ class terrain
   private:
    int d_largeur,d_longeur;
    vector<vector<string>> d_terrainOBjet;
+   /*
+    aventurier d_aventurier;
+    terrain d_terrain;
+    monstre d_monstre;
+    amulette d_amulette;
+    **/
 };
 
 
