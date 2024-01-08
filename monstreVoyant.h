@@ -17,5 +17,4 @@ private:
 
 };
 
-
 #endif //PROJETQUALITEPROG_MONSTREVOYANT_H

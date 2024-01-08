@@ -249,3 +249,84 @@
 
 1703278376 source:c:\users\zk\desktop\explorationruines\projetprog\affichage.cpp
 
+1704751244 source:c:\users\zk\desktop\projetprog\projetprog\affichage.cpp
+
+1704751244 source:c:\users\zk\desktop\projetprog\projetprog\amulette.cpp
+	"amulette.h"
+
+1704751244 c:\users\zk\desktop\projetprog\projetprog\amulette.h
+
+1704751244 source:c:\users\zk\desktop\projetprog\projetprog\armure.cpp
+	"armure.h"
+
+1704751244 c:\users\zk\desktop\projetprog\projetprog\armure.h
+	"equipement.h"
+
+1704751244 c:\users\zk\desktop\projetprog\projetprog\equipement.h
+
+1704751244 source:c:\users\zk\desktop\projetprog\projetprog\aventurier.cpp
+	"aventurier.h"
+
+1704751244 c:\users\zk\desktop\projetprog\projetprog\aventurier.h
+	"equipement.h"
+	"epee.h"
+	"armure.h"
+	"amulette.h"
+
+1704751244 c:\users\zk\desktop\projetprog\projetprog\epee.h
+	"equipement.h"
+
+1704751244 source:c:\users\zk\desktop\projetprog\projetprog\epee.cpp
+	"epee.h"
+
+1704751244 source:c:\users\zk\desktop\projetprog\projetprog\equipement.cpp
+	"equipement.h"
+
+1704751244 source:c:\users\zk\desktop\projetprog\projetprog\mainterrain.cpp
+	"terrain.h"
+
+1704751244 c:\users\zk\desktop\projetprog\projetprog\terrain.h
+	<windows.h>
+	<iostream>
+	<string>
+	<vector>
+	<unistd.h>
+	<conio.h>
+
+1704751244 source:c:\users\zk\desktop\projetprog\projetprog\maintest.cpp
+	"doctest.h"
+
+1704751244 c:\users\zk\desktop\projetprog\projetprog\doctest.h
+
+1704751244 source:c:\users\zk\desktop\projetprog\projetprog\monstre.cpp
+	"monstre.h"
+
+1704751244 c:\users\zk\desktop\projetprog\projetprog\monstre.h
+	<random>
+	<ctime>
+
+1704751244 source:c:\users\zk\desktop\projetprog\projetprog\monstreaveugle.cpp
+	"monstreAveugle.h"
+
+1704751244 c:\users\zk\desktop\projetprog\projetprog\monstreaveugle.h
+	"aventurier.h"
+	"monstre.h"
+	"ctime"
+	"random"
+
+1704751244 source:c:\users\zk\desktop\projetprog\projetprog\monstrevoyant.cpp
+	"monstreVoyant.h"
+
+1704752214 c:\users\zk\desktop\projetprog\projetprog\monstrevoyant.h
+	"monstre.h"
+	"aventurier.h"
+
+1704751244 source:c:\users\zk\desktop\projetprog\projetprog\terrain.cpp
+	"terrain.h"
+
+1704751244 source:c:\users\zk\desktop\projetprog\projetprog\testarmure.cpp
+
+1704751244 source:c:\users\zk\desktop\projetprog\projetprog\testaventurier.cpp
+
+1704751244 source:c:\users\zk\desktop\projetprog\projetprog\testepee.cpp
+
