@@ -12,7 +12,7 @@ class monstre {
 public:
     virtual ~monstre() = default;
     monstre(int ptsVie, int ptsForce, int habilete, int x, int y);
-    virtual void seDeplace() = 0;
+    virtual void seDeplace(int posAventurierX, int postAventurierY) = 0;
     //void attaque(const aventurier& a);
     void perdPointsVie(int force);
     int attaque() const;
