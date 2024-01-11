@@ -6,12 +6,13 @@
 #define PROJETQUALITEPROG_MONSTREVOYANT_H
 
 #include "monstre.h"
-#include "aventurier.h"
+
+class Objet;
 
 class monstreVoyant : public monstre {
 public:
-    monstreVoyant(int ptsVie, int ptsForce, int habilete, int x, int y);
-    void seDeplace(int aventurierX, int aventurierY);
+    monstreVoyant(int ptsVie, int ptsForce, int habilete,const string& forme,Objet& config);
+    void seDeplace(int aventurierX, int aventurierY)override;
 
 private:
 

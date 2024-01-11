@@ -1,11 +1,12 @@
 #include "aventurier.h"
+#include "config.h"
 
 
-aventurier::aventurier(double vie, double force, const epee& epee, const armure& armure) :
-    d_pointsVie{vie}, d_pointsForce{force}, d_epee{force}, d_armure{armure}, d_x{xInitial}, d_y{yInitial}
-{
 
-}
+aventurier::aventurier(double vie, double force, const epee& epee, const armure& armure,const string& forme,Objet& config) :
+    d_pointsVie{vie}, d_pointsForce{force}, d_epee{force}, d_armure{armure},
+    d_forme(forme),d_x{config.trouverCoordonnees().second}, d_y{config.trouverCoordonnees().second}{}
+
 
 double aventurier::getVie() const
 {
@@ -47,46 +48,6 @@ epee aventurier::getEpee() const
     return d_epee;
 }
 
-void aventurier::deplacer(int choix)
-{
-    bool m = true;
-    while(m)
-    {
-        switch(choix)
-        {
-            case 1: //droite
-                d_x++;
-                break;
-            case 2: //gauche
-                d_x--;
-                break;
-            case 3: //haut
-                d_y++;
-                break;
-            case 4: //bas
-                d_y--;
-                break;
-            case 5: //diagonaleHautDroite
-                d_x++;
-                d_y++;
-                break;
-            case 6: //diagonaleHautGauche
-                d_x--;
-                d_y++;
-                break;
-            case 7: //diagonaleBasDroite
-                d_x++;
-                d_y--;
-                break;
-            case 8: //diagonaleBasGauche
-                d_x--;
-                d_y--;
-                break;
-            default:
-                m = false;
-        }
-    }
-}
 
 
 void aventurier::subirDegat(double f)
@@ -94,9 +55,12 @@ void aventurier::subirDegat(double f)
     d_pointsVie -= d_armure.attaqueMonstre(f);
 }
 
-void aventurier::attaque(double f)
-{
+double aventurier::attaque()
+{   srand(time(0));
     d_epee.attaqueEpee();
+    if(rand()%100<80)
+    {return (d_pointsForce+d_epee.getPointSolidite())*0.9;
+    }else return 0.0;
 }
 
 bool aventurier::possedeAmulette(const amulette& a) const
@@ -107,4 +71,19 @@ bool aventurier::possedeAmulette(const amulette& a) const
     }
     else
         return false;
+}
+
+string aventurier::getForme()const
+{
+    return d_forme;
+}
+
+bool aventurier::estVivant()
+{
+    return d_pointsVie == 0;
+}
+
+void aventurier::setVie(double vie)
+{
+    d_pointsVie = vie;
 }

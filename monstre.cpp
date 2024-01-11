@@ -1,9 +1,5 @@
-//
-// Created by Kader
-//
-
 #include "monstre.h"
-
+#include "config.h"
 
 int monstre::habilete() const
 { return d_habilete; }
@@ -35,6 +31,11 @@ int monstre::y() const
     return d_y;
 }
 
+string monstre::getforme() const
+{
+    return d_forme;
+}
+
 int monstre::attaque() const
 {
     srand(time(NULL));
@@ -51,12 +52,12 @@ int monstre::attaque() const
 
 void monstre::perdPointsVie(int force)
 {
-    d_pointsVie-force;
-    d_vivant = estVivant();
+    d_pointsVie-=force;
+
 }
 
-monstre::monstre(int ptsVie, int ptsForce, int habilete, int x, int y) : d_pointsVie{ptsVie},
-d_pointsForce{ptsForce}, d_habilete{habilete}, d_x{x}, d_y{y},d_vivant{true}
+monstre::monstre(int ptsVie, int ptsForce, int habilete,const string& forme,Objet& config ) : d_pointsVie{ptsVie},
+d_pointsForce{ptsForce}, d_habilete{habilete}, d_x{config.trouverOccurrenceAleatoire(config).first}, d_y{config.trouverOccurrenceAleatoire(config).first},d_vivant{true},d_forme{forme}
 {
 
 }

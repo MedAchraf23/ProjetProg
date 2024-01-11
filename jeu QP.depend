@@ -1,332 +1,104 @@
 # depslib dependency file v1.0
-1703276832 source:c:\users\zk\desktop\explorationruines\projetprog\maintest.cpp
-	"doctest.h"
+1704983058 source:c:\users\zk\desktop\projetprog\projetprog\afficheur.cpp
+	"afficheur.h"
+	"config.h"
 
-1703276831 c:\users\zk\desktop\explorationruines\projetprog\doctest.h
+1704983100 c:\users\zk\desktop\projetprog\projetprog\afficheur.h
+	"include.h"
 
-1703276832 source:c:\users\zk\desktop\explorationruines\projetprog\monstre.cpp
-	"monstre.h"
-
-1703276832 c:\users\zk\desktop\explorationruines\projetprog\monstre.h
-	<random>
-	<ctime>
-
-1703278376 source:c:\users\zk\desktop\explorationruines\projetprog\monstreaveugle.cpp
-	"monstreAveugle.h"
-
-1703278376 c:\users\zk\desktop\explorationruines\projetprog\monstreaveugle.h
-	"aventurier.h"
-	"monstre.h"
-	"ctime"
-	"random"
-
-1703276832 source:c:\users\zk\desktop\explorationruines\projetprog\monstrevoyant.cpp
-	"monstreVoyant.h"
-
-1703278376 c:\users\zk\desktop\explorationruines\projetprog\monstrevoyant.h
-	"monstre.h"
-	"aventurier.h"
-
-1703276831 source:c:\users\zk\desktop\explorationruines\projetprog\amulette.cpp
-	"amulette.h"
-
-1703276831 c:\users\zk\desktop\explorationruines\projetprog\amulette.h
-
-1703276831 c:\users\zk\desktop\explorationruines\projetprog\aventurier.h
-	"equipement.h"
-	"epee.h"
-	"armure.h"
-	"amulette.h"
-
-1703278376 c:\users\zk\desktop\explorationruines\projetprog\equipement.h
-
-1703276831 c:\users\zk\desktop\explorationruines\projetprog\epee.h
-	"equipement.h"
-
-1703276831 c:\users\zk\desktop\explorationruines\projetprog\armure.h
-	"equipement.h"
-
-1703278376 source:c:\users\zk\desktop\explorationruines\projetprog\epee.cpp
-	"epee.h"
-
-1703276831 source:c:\users\zk\desktop\explorationruines\projetprog\armure.cpp
-	"armure.h"
-
-1703278376 source:c:\users\zk\desktop\explorationruines\projetprog\equipement.cpp
-	"equipement.h"
-
-1703276831 source:c:\users\zk\desktop\explorationruines\projetprog\aventurier.cpp
-	"aventurier.h"
-
-1703276832 source:c:\users\zk\desktop\explorationruines\projetprog\testaventurier.cpp
-
-1703276832 source:c:\users\zk\desktop\explorationruines\projetprog\testarmure.cpp
-
-1703276832 source:c:\users\zk\desktop\explorationruines\projetprog\testepee.cpp
-
-1703199584 D
-
-1703269546 source:c:\users\zk\desktop\explorationruines\projetprog\testmonstreaveugle.cpp
-	"doctest.h"
-	"monstreAveugle.h"
-
-1703269546 eugle.h"
-
-1703195015 source:c:\users\dell\desktop\l3 miage\c++ projets\jeu qp\amulette.cpp
-	"amulette.h"
-
-1703195015 c:\users\dell\desktop\l3 miage\c++ projets\jeu qp\amulette.h
-
-1703195015 source:c:\users\dell\desktop\l3 miage\c++ projets\jeu qp\armure.cpp
-	"armure.h"
-
-1703195015 c:\users\dell\desktop\l3 miage\c++ projets\jeu qp\armure.h
-	"equipement.h"
-
-1703195015 c:\users\dell\desktop\l3 miage\c++ projets\jeu qp\equipement.h
-
-1703264622 source:c:\users\dell\desktop\l3 miage\c++ projets\jeu qp\aventurier.cpp
-	"aventurier.h"
-
-1703264622 c:\users\dell\desktop\l3 miage\c++ projets\jeu qp\aventurier.h
-	"equipement.h"
-	"epee.h"
-	"armure.h"
-	"amulette.h"
-
-1703195015 c:\users\dell\desktop\l3 miage\c++ projets\jeu qp\epee.h
-	"equipement.h"
-
-1703195015 source:c:\users\dell\desktop\l3 miage\c++ projets\jeu qp\epee.cpp
-	"epee.h"
-
-1703195015 source:c:\users\dell\desktop\l3 miage\c++ projets\jeu qp\equipement.cpp
-	"equipement.h"
-
-1703269697 source:c:\users\dell\desktop\l3 miage\c++ projets\jeu qp\maintest.cpp
-	"doctest.h"
-
-1703270728 c:\users\dell\desktop\l3 miage\c++ projets\jeu qp\doctest.h
-
-1703270129 source:c:\users\dell\desktop\l3 miage\c++ projets\jeu qp\monstre.cpp
-	"monstre.h"
-
-1703264622 c:\users\dell\desktop\l3 miage\c++ projets\jeu qp\monstre.h
-	<random>
-	<ctime>
-
-1703264622 source:c:\users\dell\desktop\l3 miage\c++ projets\jeu qp\monstreaveugle.cpp
-	"monstreAveugle.h"
-
-1703264622 c:\users\dell\desktop\l3 miage\c++ projets\jeu qp\monstreaveugle.h
-	"aventurier.h"
-	"monstre.h"
-	"ctime"
-	"random"
-
-1703269598 source:c:\users\dell\desktop\l3 miage\c++ projets\jeu qp\monstrevoyant.cpp
-	"monstreVoyant.h"
-
-1703269598 c:\users\dell\desktop\l3 miage\c++ projets\jeu qp\monstrevoyant.h
-	"monstre.h"
-	"aventurier.h"
-
-1703270728 source:c:\users\dell\desktop\l3 miage\c++ projets\jeu qp\testarmure.cpp
-
-1703270729 source:c:\users\dell\desktop\l3 miage\c++ projets\jeu qp\testaventurier.cpp
-
-1703270729 source:c:\users\dell\desktop\l3 miage\c++ projets\jeu qp\testepee.cpp
-
-1703271037 source:c:\users\dell\desktop\l3 miage\c++ projets\jeu qp\mainterrain.cpp
-	"terrain.h"
-
-1703269598 c:\users\dell\desktop\l3 miage\c++ projets\jeu qp\terrain.h
+1704946725 c:\users\zk\desktop\projetprog\projetprog\include.h
 	<windows.h>
 	<iostream>
 	<string>
 	<vector>
 	<unistd.h>
 	<conio.h>
-
-1703269613 source:c:\users\dell\desktop\l3 miage\c++ projets\jeu qp\terrain.cpp
-	"terrain.h"
-
-1703270983 source:c:\users\dell\desktop\l3 miage\c++ projets\jeu qp\affichage.cpp
-
-1703270983 source:c:\users\dell\desktop\l3 miage\c++ projets\jeu qp copie\affichage.cpp
-
-1703195015 source:c:\users\dell\desktop\l3 miage\c++ projets\jeu qp copie\amulette.cpp
-	"amulette.h"
-
-1703195015 c:\users\dell\desktop\l3 miage\c++ projets\jeu qp copie\amulette.h
-
-1703195015 source:c:\users\dell\desktop\l3 miage\c++ projets\jeu qp copie\armure.cpp
-	"armure.h"
-
-1703195015 c:\users\dell\desktop\l3 miage\c++ projets\jeu qp copie\armure.h
-	"equipement.h"
-
-1703195015 c:\users\dell\desktop\l3 miage\c++ projets\jeu qp copie\equipement.h
-
-1703264622 source:c:\users\dell\desktop\l3 miage\c++ projets\jeu qp copie\aventurier.cpp
-	"aventurier.h"
-
-1703264622 c:\users\dell\desktop\l3 miage\c++ projets\jeu qp copie\aventurier.h
-	"equipement.h"
-	"epee.h"
-	"armure.h"
-	"amulette.h"
-
-1703195015 c:\users\dell\desktop\l3 miage\c++ projets\jeu qp copie\epee.h
-	"equipement.h"
-
-1703195015 source:c:\users\dell\desktop\l3 miage\c++ projets\jeu qp copie\epee.cpp
-	"epee.h"
-
-1703195015 source:c:\users\dell\desktop\l3 miage\c++ projets\jeu qp copie\equipement.cpp
-	"equipement.h"
-
-1703269697 source:c:\users\dell\desktop\l3 miage\c++ projets\jeu qp copie\maintest.cpp
-	"doctest.h"
-
-1703270728 c:\users\dell\desktop\l3 miage\c++ projets\jeu qp copie\doctest.h
-
-1703270129 source:c:\users\dell\desktop\l3 miage\c++ projets\jeu qp copie\monstre.cpp
-	"monstre.h"
-
-1703264622 c:\users\dell\desktop\l3 miage\c++ projets\jeu qp copie\monstre.h
-	<random>
+	<cstdlib>
+	<fstream>
+	<regex>
 	<ctime>
+	<random>
 
-1703264622 source:c:\users\dell\desktop\l3 miage\c++ projets\jeu qp copie\monstreaveugle.cpp
-	"monstreAveugle.h"
-
-1703264622 c:\users\dell\desktop\l3 miage\c++ projets\jeu qp copie\monstreaveugle.h
+1704981710 c:\users\zk\desktop\projetprog\projetprog\config.h
+	"include.h"
+	"terrain.h"
 	"aventurier.h"
-	"monstre.h"
-	"ctime"
-	"random"
-
-1703269598 source:c:\users\dell\desktop\l3 miage\c++ projets\jeu qp copie\monstrevoyant.cpp
 	"monstreVoyant.h"
 
-1703269598 c:\users\dell\desktop\l3 miage\c++ projets\jeu qp copie\monstrevoyant.h
-	"monstre.h"
-	"aventurier.h"
+1704946724 c:\users\zk\desktop\projetprog\projetprog\terrain.h
+	"include.h"
 
-1703269613 source:c:\users\dell\desktop\l3 miage\c++ projets\jeu qp copie\terrain.cpp
-	"terrain.h"
-
-1703269598 c:\users\dell\desktop\l3 miage\c++ projets\jeu qp copie\terrain.h
-	<windows.h>
-	<iostream>
-	<string>
-	<vector>
-	<unistd.h>
-	<conio.h>
-
-1703270728 source:c:\users\dell\desktop\l3 miage\c++ projets\jeu qp copie\testarmure.cpp
-
-1703270729 source:c:\users\dell\desktop\l3 miage\c++ projets\jeu qp copie\testaventurier.cpp
-
-1703270729 source:c:\users\dell\desktop\l3 miage\c++ projets\jeu qp copie\testepee.cpp
-
-1703270729 8f3510842050a29fad8a34ba8cf6f0b251cb9
-
-1703276832 source:c:\users\zk\desktop\explorationruines\projetprog\mainterrain.cpp
-	"terrain.h"
-
-1703276832 c:\users\zk\desktop\explorationruines\projetprog\terrain.h
-	<windows.h>
-	<iostream>
-	<string>
-	<vector>
-	<unistd.h>
-	<conio.h>
-
-1703276832 source:c:\users\zk\desktop\explorationruines\projetprog\terrain.cpp
-	"terrain.h"
-
-1703278376 source:c:\users\zk\desktop\explorationruines\projetprog\affichage.cpp
-
-1704751244 source:c:\users\zk\desktop\projetprog\projetprog\affichage.cpp
-
-1704751244 source:c:\users\zk\desktop\projetprog\projetprog\amulette.cpp
-	"amulette.h"
-
-1704751244 c:\users\zk\desktop\projetprog\projetprog\amulette.h
-
-1704751244 source:c:\users\zk\desktop\projetprog\projetprog\armure.cpp
-	"armure.h"
-
-1704751244 c:\users\zk\desktop\projetprog\projetprog\armure.h
-	"equipement.h"
-
-1704751244 c:\users\zk\desktop\projetprog\projetprog\equipement.h
-
-1704751244 source:c:\users\zk\desktop\projetprog\projetprog\aventurier.cpp
-	"aventurier.h"
-
-1704751244 c:\users\zk\desktop\projetprog\projetprog\aventurier.h
+1704983754 c:\users\zk\desktop\projetprog\projetprog\aventurier.h
 	"equipement.h"
 	"epee.h"
 	"armure.h"
 	"amulette.h"
+	"include.h"
 
-1704751244 c:\users\zk\desktop\projetprog\projetprog\epee.h
+1704946724 c:\users\zk\desktop\projetprog\projetprog\equipement.h
+
+1704946724 c:\users\zk\desktop\projetprog\projetprog\epee.h
 	"equipement.h"
 
-1704751244 source:c:\users\zk\desktop\projetprog\projetprog\epee.cpp
-	"epee.h"
-
-1704751244 source:c:\users\zk\desktop\projetprog\projetprog\equipement.cpp
+1704946724 c:\users\zk\desktop\projetprog\projetprog\armure.h
 	"equipement.h"
 
-1704751244 source:c:\users\zk\desktop\projetprog\projetprog\mainterrain.cpp
-	"terrain.h"
+1704981416 c:\users\zk\desktop\projetprog\projetprog\amulette.h
 
-1704751244 c:\users\zk\desktop\projetprog\projetprog\terrain.h
-	<windows.h>
-	<iostream>
-	<string>
-	<vector>
-	<unistd.h>
-	<conio.h>
-
-1704751244 source:c:\users\zk\desktop\projetprog\projetprog\maintest.cpp
-	"doctest.h"
-
-1704751244 c:\users\zk\desktop\projetprog\projetprog\doctest.h
-
-1704751244 source:c:\users\zk\desktop\projetprog\projetprog\monstre.cpp
+1704946724 c:\users\zk\desktop\projetprog\projetprog\monstrevoyant.h
 	"monstre.h"
 
-1704751244 c:\users\zk\desktop\projetprog\projetprog\monstre.h
-	<random>
-	<ctime>
+1704946724 c:\users\zk\desktop\projetprog\projetprog\monstre.h
+	"include.h"
 
-1704751244 source:c:\users\zk\desktop\projetprog\projetprog\monstreaveugle.cpp
+1704981414 source:c:\users\zk\desktop\projetprog\projetprog\amulette.cpp
+	"amulette.h"
+
+1704946724 source:c:\users\zk\desktop\projetprog\projetprog\armure.cpp
+	"armure.h"
+
+1704983754 source:c:\users\zk\desktop\projetprog\projetprog\aventurier.cpp
+	"aventurier.h"
+	"config.h"
+
+1704981653 source:c:\users\zk\desktop\projetprog\projetprog\config.cpp
+	"config.h"
+	"afficheur.h"
+
+1704946724 source:c:\users\zk\desktop\projetprog\projetprog\epee.cpp
+	"epee.h"
+
+1704946724 source:c:\users\zk\desktop\projetprog\projetprog\equipement.cpp
+	"equipement.h"
+
+1704946724 source:c:\users\zk\desktop\projetprog\projetprog\mainterrain.cpp
+	"config.h"
+	"afficheur.h"
+
+1704946724 source:c:\users\zk\desktop\projetprog\projetprog\monstre.cpp
+	"monstre.h"
+	"config.h"
+
+1704946724 source:c:\users\zk\desktop\projetprog\projetprog\monstreaveugle.cpp
 	"monstreAveugle.h"
 
-1704751244 c:\users\zk\desktop\projetprog\projetprog\monstreaveugle.h
-	"aventurier.h"
+1704946724 c:\users\zk\desktop\projetprog\projetprog\monstreaveugle.h
 	"monstre.h"
-	"ctime"
-	"random"
+	"include.h"
 
-1704751244 source:c:\users\zk\desktop\projetprog\projetprog\monstrevoyant.cpp
+1704946724 source:c:\users\zk\desktop\projetprog\projetprog\monstrevoyant.cpp
 	"monstreVoyant.h"
 
-1704752214 c:\users\zk\desktop\projetprog\projetprog\monstrevoyant.h
-	"monstre.h"
-	"aventurier.h"
-
-1704751244 source:c:\users\zk\desktop\projetprog\projetprog\terrain.cpp
+1704946724 source:c:\users\zk\desktop\projetprog\projetprog\terrain.cpp
 	"terrain.h"
 
-1704751244 source:c:\users\zk\desktop\projetprog\projetprog\testarmure.cpp
+1704980038 source:c:\users\zk\desktop\projetprog\projetprog\testarmure.cpp
 
-1704751244 source:c:\users\zk\desktop\projetprog\projetprog\testaventurier.cpp
+1704982315 source:c:\users\zk\desktop\projetprog\projetprog\testaventurier.cpp
 
-1704751244 source:c:\users\zk\desktop\projetprog\projetprog\testepee.cpp
+1704980038 source:c:\users\zk\desktop\projetprog\projetprog\testepee.cpp
+
+1704982329 source:c:\users\zk\desktop\projetprog\projetprog\testmonstrevoyant.cpp
+
+1704983754 source:c:\users\zk\desktop\projetprog\projetprog\testobjet.cpp
 

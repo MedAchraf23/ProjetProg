@@ -37,5 +37,5 @@ void monstreAveugle::seDeplace() {
     }
 }
 
-monstreAveugle::monstreAveugle(int ptsVie, int ptsForce, int habilete, int x, int y) : monstre{ptsVie,ptsForce,habilete,x,y}
+monstreAveugle::monstreAveugle(int ptsVie, int ptsForce, int habilete, const string& forme,Objet& config) : monstre{ptsVie,ptsForce,habilete,forme,config}
 {}

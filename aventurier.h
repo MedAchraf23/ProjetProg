@@ -5,14 +5,17 @@
 #include "epee.h"
 #include "armure.h"
 #include "amulette.h"
+#include "include.h"
 
-const int xInitial = 10;
-const int yInitial = 10;
+
+class Objet;
+
 
 class aventurier
 {
 public:
-    aventurier(double vie, double force, const epee& epee, const armure& armure);
+
+    aventurier(double vie, double force, const epee& epee, const armure& armure,const string& forme,Objet& config);
     double getVie() const;
     double getForce() const;
     int getX() const;
@@ -21,17 +24,20 @@ public:
     void setY(int y);
     epee getEpee() const;
     armure getArmure() const;
-    void deplacer(int choix);
     void subirDegat(double f);
-    void attaque(double f);
+    double attaque();
     bool possedeAmulette(const amulette& a) const;
+    bool estVivant();
+    void setVie(double vie);
+    string getForme()const;
 private:
     double d_pointsVie;
     double d_pointsForce;
     int d_x, d_y;
     epee d_epee;
     armure d_armure;
-    //boursePieces d_boursePieces;
+    string d_forme;
+
 };
 
 #endif // AVENTURIER_H_INCLUDED

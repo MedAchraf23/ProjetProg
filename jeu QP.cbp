@@ -32,21 +32,24 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="affichage.cpp" />
-		<Unit filename="affichage.h" />
+		<Unit filename="afficheur.cpp" />
+		<Unit filename="afficheur.h" />
 		<Unit filename="amulette.cpp" />
 		<Unit filename="amulette.h" />
 		<Unit filename="armure.cpp" />
 		<Unit filename="armure.h" />
 		<Unit filename="aventurier.cpp" />
 		<Unit filename="aventurier.h" />
+		<Unit filename="config.cpp" />
+		<Unit filename="config.h" />
 		<Unit filename="doctest.h" />
 		<Unit filename="epee.cpp" />
 		<Unit filename="epee.h" />
 		<Unit filename="equipement.cpp" />
 		<Unit filename="equipement.h" />
+		<Unit filename="include.h" />
+		<Unit filename="includeclass.h" />
 		<Unit filename="mainterrain.cpp" />
-		<Unit filename="maintest.cpp" />
 		<Unit filename="monstre.cpp" />
 		<Unit filename="monstre.h" />
 		<Unit filename="monstreAveugle.cpp" />
@@ -55,9 +58,12 @@
 		<Unit filename="monstreVoyant.h" />
 		<Unit filename="terrain.cpp" />
 		<Unit filename="terrain.h" />
+		<Unit filename="terrain.txt" />
 		<Unit filename="testArmure.cpp" />
 		<Unit filename="testAventurier.cpp" />
 		<Unit filename="testEpee.cpp" />
+		<Unit filename="testMonstreVoyant.cpp" />
+		<Unit filename="testObjet.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

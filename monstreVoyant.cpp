@@ -4,7 +4,7 @@
 
 #include "monstreVoyant.h"
 
-monstreVoyant::monstreVoyant(int ptsVie, int ptsForce, int habilete, int x, int y):monstre{ptsVie,ptsForce,habilete,x,y}
+monstreVoyant::monstreVoyant(int ptsVie, int ptsForce, int habilete,const string& forme,Objet& config):monstre{ptsVie,ptsForce,habilete,forme,config}
 {}
 
 void monstreVoyant::seDeplace(int aventurierX, int aventurierY) {
@@ -14,31 +14,30 @@ void monstreVoyant::seDeplace(int aventurierX, int aventurierY) {
     int distanceX = xposAventurier - x();
     int distanceY = yposAventurier - y();
 
-        if(distanceX>=-8&&distanceX<=8 && distanceY>=-8&&distanceY<=8 && xposAventurier!=x())
-        {
-            if(distanceX<0)
-            {
-                deplaceGauche();
-            }
-
-            else { deplaceDroite();};
-
-        }
-
-        else if(distanceX>=-8&&distanceX<=8 && distanceY>=-8&&distanceY<=8 && xposAventurier==x())
-        {
-            if(yposAventurier<y())
-            {
+    if (std::abs(distanceX) <= 8 && std::abs(distanceY) <= 8) {
+        
+        if (xposAventurier == x()) {
+            if (distanceY < 0) {
                 deplaceHaut();
-            }
-            else
-            {
+            } else if (distanceY > 0) {
                 deplaceBas();
             }
         }
-
-        else
-        {
-            //deplace random
+      
+        else if (yposAventurier == y()) {
+            if (distanceX < 0) {
+                deplaceGauche();
+            } else if (distanceX > 0) {
+                deplaceDroite();
+            }
         }
+
+        else {
+            if (distanceX < 0) {
+                deplaceGauche();
+            } else {
+                deplaceDroite();
+            }
+        }
+    }
 }

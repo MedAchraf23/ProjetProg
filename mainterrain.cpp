@@ -1,18 +1,16 @@
-#include "terrain.h"
+#include "config.h"
+#include "afficheur.h"
 
-using namespace std;
+
 
 
 int main()
 {
+  Objet jeu{};
+  string path="terrain.txt";
+  jeu.objetterrain(path);
+  jeu.afficheterrain(path,afficheur{});
+  
+  return 0;
 
- terrain chateau{20,20};
- chateau.init_terrain();
- int x=1,y=1;
- bool placed;
- chateau.objet_terrain(x,y,"@");
- int ax=10,ay=10;
- chateau.affiche_terrain(ax,ay);
- chateau.terrain_objet_update(1,1,"@",ax,ay);
-    return 0;
 }
