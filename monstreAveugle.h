@@ -11,10 +11,10 @@
 class Objet;
 class monstreAveugle : public monstre {
 public:
-    monstreAveugle(int ptsVie, int ptsForce, int habilete,const string& forme,Objet& config);
-    void seDeplace();
+    monstreAveugle(double ptsVie, double ptsForce,int posx,int posy, int habilete,const string& forme,Objet& config);
+    void seDeplace()override;
+    void seDeplace(int aventurierX, int aventurierY) override;
 
-private:
 
 };
 

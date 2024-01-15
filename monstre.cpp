@@ -50,17 +50,15 @@ int monstre::attaque() const
         }
 }
 
-void monstre::perdPointsVie(int force)
+void monstre::perdPointsVie(double force)
 {
     d_pointsVie-=force;
 
 }
 
-monstre::monstre(int ptsVie, int ptsForce, int habilete,const string& forme,Objet& config ) : d_pointsVie{ptsVie},
-d_pointsForce{ptsForce}, d_habilete{habilete}, d_x{config.trouverOccurrenceAleatoire(config).first}, d_y{config.trouverOccurrenceAleatoire(config).first},d_vivant{true},d_forme{forme}
-{
-
-}
+monstre::monstre(double ptsVie, double ptsForce,int posx, int posy, int habilete,const string& forme,Objet& config ) : d_pointsVie{ptsVie},
+d_pointsForce{ptsForce}, d_habilete{habilete},d_x{posx},d_y{posy},d_vivant{true},d_forme{forme}
+{}
 
 void monstre::deplaceHaut()
 {

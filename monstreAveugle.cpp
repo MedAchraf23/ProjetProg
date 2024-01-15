@@ -4,6 +4,7 @@
 
 #include "monstreAveugle.h"
 
+void monstreAveugle::seDeplace(int aventurierX, int aventurierY) {}
 
 void monstreAveugle::seDeplace() {
     std::srand(std::time(0));
@@ -37,5 +38,7 @@ void monstreAveugle::seDeplace() {
     }
 }
 
-monstreAveugle::monstreAveugle(int ptsVie, int ptsForce, int habilete, const string& forme,Objet& config) : monstre{ptsVie,ptsForce,habilete,forme,config}
-{}
+
+
+
+monstreAveugle::monstreAveugle(double ptsVie, double ptsForce,int posx,int posy, int habilete, const string& forme,Objet& config) : monstre{ptsVie,ptsForce,posx,posy,habilete,forme,config} {}

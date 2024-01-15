@@ -4,7 +4,11 @@
 
 #include "monstreVoyant.h"
 
-monstreVoyant::monstreVoyant(int ptsVie, int ptsForce, int habilete,const string& forme,Objet& config):monstre{ptsVie,ptsForce,habilete,forme,config}
+monstreVoyant::monstreVoyant(double ptsVie, double ptsForce,int posx,int posy, int habilete,const string& forme,Objet& config):monstre{ptsVie,ptsForce,posx,posy,habilete,forme,config}
+{}
+
+
+void monstreVoyant::seDeplace()
 {}
 
 void monstreVoyant::seDeplace(int aventurierX, int aventurierY) {

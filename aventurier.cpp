@@ -5,7 +5,7 @@
 
 aventurier::aventurier(double vie, double force, const epee& epee, const armure& armure,const string& forme,Objet& config) :
     d_pointsVie{vie}, d_pointsForce{force}, d_epee{force}, d_armure{armure},
-    d_forme(forme),d_x{config.trouverCoordonnees().second}, d_y{config.trouverCoordonnees().second}{}
+    d_forme(forme),d_possedeamulete{false},d_x{config.trouverCoordonneesaventurier().second}, d_y{config.trouverCoordonneesaventurier().second}{}
 
 
 double aventurier::getVie() const
@@ -63,14 +63,16 @@ double aventurier::attaque()
     }else return 0.0;
 }
 
-bool aventurier::possedeAmulette(const amulette& a) const
+bool aventurier::possedeAmulette() const
 {
-    if(d_x == a.getX() && d_y == a.getY())
-    {
-        return true;
-    }
-    else
-        return false;
+    
+    return d_possedeamulete;
+}
+
+void aventurier::setpossedeAmulette() 
+{
+   d_possedeamulete=true;
+
 }
 
 string aventurier::getForme()const
@@ -78,12 +80,14 @@ string aventurier::getForme()const
     return d_forme;
 }
 
-bool aventurier::estVivant()
+void aventurier::setforme(const string&  forme)
 {
-    return d_pointsVie == 0;
+   d_forme=forme;
 }
 
-void aventurier::setVie(double vie)
+
+bool aventurier::estVivant() const
 {
-    d_pointsVie = vie;
+   return d_pointsVie!=0;
+
 }

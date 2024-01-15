@@ -14,7 +14,7 @@ class Objet;
 class aventurier
 {
 public:
-
+    
     aventurier(double vie, double force, const epee& epee, const armure& armure,const string& forme,Objet& config);
     double getVie() const;
     double getForce() const;
@@ -26,10 +26,11 @@ public:
     armure getArmure() const;
     void subirDegat(double f);
     double attaque();
-    bool possedeAmulette(const amulette& a) const;
-    bool estVivant();
-    void setVie(double vie);
+    bool possedeAmulette() const;
+    void setpossedeAmulette();
     string getForme()const;
+    void setforme(const string& forme);
+    bool estVivant() const;
 private:
     double d_pointsVie;
     double d_pointsForce;
@@ -37,7 +38,9 @@ private:
     epee d_epee;
     armure d_armure;
     string d_forme;
-
+    bool d_possedeamulete;
+    
+ 
 };
 
 #endif // AVENTURIER_H_INCLUDED

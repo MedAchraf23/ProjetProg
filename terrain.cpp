@@ -39,7 +39,7 @@ bool terrain::placerObjet(int x,int y)
 
 
 
-vector<vector<string>> terrain::getmatrice()
+vector<vector<string>>& terrain::getmatrice()
 {
     return d_terrainOBjet;
 } 

@@ -13,10 +13,11 @@ class Objet;
 class monstre {
 public:
     virtual ~monstre() = default;
-    monstre(int ptsVie, int ptsForce, int habilete,const string& forme,Objet& config);
+    monstre(double ptsVie, double ptsForce,int posx,int posy, int habilete,const string& forme,Objet& config);
     virtual void seDeplace(int aventurierX, int aventurierY) = 0;
-    //void attaque(const aventurier& a);
-    void perdPointsVie(int force);
+    virtual void seDeplace() =0;
+    
+    void perdPointsVie(double force);
     int attaque() const;
 
     void setX(int x);
@@ -41,9 +42,9 @@ public:
     int y() const;
     string getforme()const;
 
-private:
-    int d_pointsVie;
-    int d_pointsForce;
+protected:
+    double d_pointsVie;
+    double d_pointsForce;
     int d_habilete;
     int d_x, d_y;
     bool d_vivant;
