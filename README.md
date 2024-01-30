@@ -11,3 +11,7 @@ Pour déplacer l'aventurier dans le jeu, utilisez les touches numériques en hau
 6 - Diagonale haut droite
 7 - Diagonale bas gauche
 8 - Diagonale bas droite
+
+Aperçu du jeu 
+![Image de jeu QP](https://github.com/MedAchraf23/ProjetProg/assets/150631329/78cd5ec3-fa3a-4f52-9911-a5df9aa469d7)
+
